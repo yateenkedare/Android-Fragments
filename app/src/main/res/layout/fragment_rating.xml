@@ -1,0 +1,223 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yatee.favouritemovies.RatingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="@string/movies_by_rating"
+            android:textStyle="bold"
+            android:layout_width="108dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/subTitle"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/title"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:layout_weight="0.43"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleValue"
+                android:layout_weight="0.57" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <TextView
+                android:text="@string/description_"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_weight="0.43"
+                tools:ignore="NestedWeights"
+                android:layout_width="0dp" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/descriptionValue"
+                android:layout_weight="0.57" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/genre_"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView8"
+                tools:ignore="NestedWeights"
+                android:layout_weight="0.43" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/genreValue"
+                android:layout_weight="0.57" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/rating_"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                tools:ignore="NestedWeights"
+                android:layout_weight="0.43" />
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingValue"
+                android:layout_weight="0.57" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/year_"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView14"
+                tools:ignore="NestedWeights"
+                android:layout_weight="0.43" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/yearValue"
+                android:layout_weight="0.57" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+            <TextView
+                android:text="@string/imdb_"
+                android:textStyle="bold"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:id="@+id/textView15"
+                tools:ignore="NestedWeights"
+                android:layout_weight="0.43" />
+
+            <TextView
+                android:text="@string/imdbval"
+                android:layout_height="wrap_content"
+                android:id="@+id/imdbVal"
+
+                android:layout_width="0dp"
+                android:layout_weight="0.57" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/first"
+                android:id="@+id/start"
+                tools:ignore="NestedWeights"
+                android:layout_weight="1"
+                style="@android:style/ButtonBar"/>
+
+            <Button
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/previous"
+                android:id="@+id/back"
+                android:layout_weight="1"
+                style="@android:style/ButtonBar"/>
+
+            <Button
+                android:text="@string/finish"
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/finish"
+                android:layout_weight="1"
+                style="@android:style/ButtonBar"/>
+
+            <Button
+
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/next"
+                android:id="@+id/next"
+                android:layout_weight="1"
+                style="@android:style/ButtonBar"/>
+
+            <Button
+                android:layout_margin="5sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/last"
+                android:id="@+id/last"
+                android:layout_weight="1"
+                style="@android:style/ButtonBar"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

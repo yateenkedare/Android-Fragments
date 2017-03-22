@@ -1,0 +1,174 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yatee.favouritemovies.EditMovieFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameTextViewUpdate"
+                android:layout_weight="0.43"
+                tools:ignore="NestedWeights"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/nameEditTextUpdate"
+                android:layout_weight="0.57"
+                android:maxLength="50"
+                android:hint="@string/input_movie_name_here"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+            <TextView
+                android:text="@string/description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionUpdate"
+                android:layout_weight="0.43"
+                tools:ignore="NestedWeights"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:id="@+id/descriptionValueUpdate"
+                android:maxLength="1000"
+                android:layout_weight="0.57"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/genre"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/genreUpdate"
+                android:layout_weight="0.43"
+                tools:ignore="NestedWeights"/>
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/spinnerUpdate"
+                android:layout_weight="0.57"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/rating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/ratingUpdate"
+                android:layout_weight="0.43"
+                tools:ignore="NestedWeights"/>
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBarUpdate"
+                android:max="5"
+                android:layout_weight="0.43" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.14"
+                android:id="@+id/ratingTV2"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="@string/year"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/yearUpdateField"
+                android:layout_weight="0.43"
+                tools:ignore="NestedWeights"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/yearUpdate"
+                android:layout_weight="0.57" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="49dp">
+
+            <TextView
+                android:text="@string/imdb"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/imdbfieldUpdate"
+                android:layout_weight="0.43"
+                tools:ignore="NestedWeights"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/imdbUpdate"
+                android:layout_weight="0.57" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="@string/save_changes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/saveChanges" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
